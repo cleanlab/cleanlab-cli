@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654287490171,
+  "lastUpdate": 1654288214670,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -104,6 +104,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 55.369622599000024 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "distinct": true,
+          "id": "801c35bf0f7a95875c51fdbf04e19cd81a746637",
+          "message": "Update schema_helpers.py",
+          "timestamp": "2022-06-03T16:27:35-04:00",
+          "tree_id": "fcd8a9891eaa4be8bddb8e519a56c8a1ebb87d73",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/801c35bf0f7a95875c51fdbf04e19cd81a746637"
+        },
+        "date": 1654288214246,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 0.09932862356970189,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 10.067591436000015 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 0.09572594804578366,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 10.446488339000013 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.06646321645153391,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 15.045916423999984 sec\nrounds: 1"
           }
         ]
       }
