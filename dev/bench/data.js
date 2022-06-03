@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654288214670,
+  "lastUpdate": 1654288755251,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -149,6 +149,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 15.045916423999984 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "distinct": true,
+          "id": "ba65af53ea2545e28c08051fbf3bf4419a053cbc",
+          "message": "Revert \"Update schema_helpers.py\"\n\nThis reverts commit 801c35bf0f7a95875c51fdbf04e19cd81a746637.",
+          "timestamp": "2022-06-03T16:38:06-04:00",
+          "tree_id": "47b8d1b5c9de76a154de2b91a63866ba7d0b0c67",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/ba65af53ea2545e28c08051fbf3bf4419a053cbc"
+        },
+        "date": 1654288754807,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 17.766790720076802,
+            "unit": "iter/sec",
+            "range": "stddev: 0.006691069833662203",
+            "extra": "mean: 56.28478523529753 msec\nrounds: 17"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.2735608996670478,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01756304274726995",
+            "extra": "mean: 439.8386690000014 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.1998625623504846,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.003438303999985 sec\nrounds: 1"
           }
         ]
       }
