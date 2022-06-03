@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654299470517,
+  "lastUpdate": 1654299494015,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -411,6 +411,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 2.9026319669999907 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "distinct": true,
+          "id": "b5327340a1b805c34ccbda6efb079b16c388400f",
+          "message": "Update schema_helpers.py",
+          "timestamp": "2022-06-03T19:37:14-04:00",
+          "tree_id": "f36b219de194867f9d364ec9e9e1f63f4353ad6e",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/b5327340a1b805c34ccbda6efb079b16c388400f"
+        },
+        "date": 1654299493639,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 13.971261464449332,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0066946299922515",
+            "extra": "mean: 71.57549821428485 msec\nrounds: 14"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.577279179256859,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004265031508898312",
+            "extra": "mean: 388.0060833333327 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.39017083352924875,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.562979889999994 sec\nrounds: 1"
           }
         ]
       }
