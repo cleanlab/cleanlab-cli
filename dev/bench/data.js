@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654299368909,
+  "lastUpdate": 1654299470517,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -370,6 +370,47 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 3.5088215760000026 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "cleanlab",
+            "username": "cleanlab"
+          },
+          "committer": {
+            "name": "cleanlab",
+            "username": "cleanlab"
+          },
+          "id": "e35338bf3682e1af280c8c266ea43cac92216b9d",
+          "message": "Reservoir sampling",
+          "timestamp": "2022-05-24T17:06:46Z",
+          "url": "https://github.com/cleanlab/cleanlab-cli/pull/9/commits/e35338bf3682e1af280c8c266ea43cac92216b9d"
+        },
+        "date": 1654299469562,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 15.696226204468092,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004306872065188072",
+            "extra": "mean: 63.70958133333601 msec\nrounds: 15"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.252256006012223,
+            "unit": "iter/sec",
+            "range": "stddev: 0.024335398096823026",
+            "extra": "mean: 443.9992600000077 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.3445149131440001,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.9026319669999907 sec\nrounds: 1"
           }
         ]
       }
