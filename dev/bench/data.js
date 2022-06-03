@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654289579146,
+  "lastUpdate": 1654291573275,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -280,6 +280,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 5.03256429999999 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "Caleb Chiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74d82da328ab4b4779721a418fb34ffbca1311f8",
+          "message": "Benchmark performance regression alerts and charts (#8)\n\n* alert on failure\r\n\r\n* temp commit to test alert\r\n\r\n* Revert \"temp commit to test alert\"\r\n\r\nThis reverts commit 36ba821af7e61bdfcc6f14e16e42cc2dad718a4e.\r\n\r\n* Revert \"Revert \"temp commit to test alert\"\"\r\n\r\nThis reverts commit 912f59f16dfbe35426cfd40ec1dd06fec70b5b43.\r\n\r\n* Update benchmarking.yml\r\n\r\n* del output.json\r\n\r\n* Update benchmarking.yml\r\n\r\n* test gh-pages\r\n\r\n* no 1G test\r\n\r\n* Update schema_helpers.py\r\n\r\n* Revert \"Update schema_helpers.py\"\r\n\r\nThis reverts commit 801c35bf0f7a95875c51fdbf04e19cd81a746637.",
+          "timestamp": "2022-06-03T16:51:49-04:00",
+          "tree_id": "47b8d1b5c9de76a154de2b91a63866ba7d0b0c67",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/74d82da328ab4b4779721a418fb34ffbca1311f8"
+        },
+        "date": 1654291572297,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 17.647904555084466,
+            "unit": "iter/sec",
+            "range": "stddev: 0.006926423017429656",
+            "extra": "mean: 56.66395105881814 msec\nrounds: 17"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.2658053848970985,
+            "unit": "iter/sec",
+            "range": "stddev: 0.021116990004975716",
+            "extra": "mean: 441.34417133332704 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.20091871848091716,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.977137061000008 sec\nrounds: 1"
           }
         ]
       }
