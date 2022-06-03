@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654299500482,
+  "lastUpdate": 1654300189558,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -497,6 +497,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 2.5022451849999925 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "Caleb Chiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "229547c7cbdf0885d55bde6ee0d9231a8da639f3",
+          "message": "Reservoir sampling (#9)\n\n* implemented reservoir sampling\r\n\r\n* Update schema_helpers.py",
+          "timestamp": "2022-06-03T19:48:49-04:00",
+          "tree_id": "f36b219de194867f9d364ec9e9e1f63f4353ad6e",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/229547c7cbdf0885d55bde6ee0d9231a8da639f3"
+        },
+        "date": 1654300188586,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 14.99699607169248,
+            "unit": "iter/sec",
+            "range": "stddev: 0.005285127033224984",
+            "extra": "mean: 66.68002013333498 msec\nrounds: 15"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.758107813483709,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002205909973132001",
+            "extra": "mean: 362.5674076666788 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.39808035747386494,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.5120556220000196 sec\nrounds: 1"
           }
         ]
       }
