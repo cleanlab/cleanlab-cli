@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654379077483,
+  "lastUpdate": 1654379113512,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -930,6 +930,58 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 1.2664938779999915 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "distinct": true,
+          "id": "6aae8553f3e8e775bb6bcc311dee3ea8f60ac378",
+          "message": "read json with 'rb' for ijson",
+          "timestamp": "2022-06-04T17:43:54-04:00",
+          "tree_id": "6939d2a20add5060cdd1da27a9ffc1f2d10950df",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/6aae8553f3e8e775bb6bcc311dee3ea8f60ac378"
+        },
+        "date": 1654379111268,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 13.927396175193573,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0075752216318560215",
+            "extra": "mean: 71.80093015384486 msec\nrounds: 13"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.6998762387531396,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0065810703527042266",
+            "extra": "mean: 370.38734800000367 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.7485300329785872,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.3359517399999987 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-csv]",
+            "value": 0.759287450913328,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.317024269000001 sec\nrounds: 1"
           }
         ]
       }
