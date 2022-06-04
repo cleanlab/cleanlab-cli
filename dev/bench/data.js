@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654318888501,
+  "lastUpdate": 1654319599853,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -632,6 +632,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 1.5646937420000313 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "Caleb Chiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72f8e4aa41b2aa32298903cccd11c0c58d5ecef8",
+          "message": "Cap number of rows in Datasets sampled from to 200K (#10)",
+          "timestamp": "2022-06-04T01:12:25-04:00",
+          "tree_id": "8307d00d18de9e36ff7e3dc20eed2bb02eb05077",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/72f8e4aa41b2aa32298903cccd11c0c58d5ecef8"
+        },
+        "date": 1654319599350,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 12.755041153390613,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00743123395305415",
+            "extra": "mean: 78.4003742500019 msec\nrounds: 12"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.3719276367951547,
+            "unit": "iter/sec",
+            "range": "stddev: 0.008116847388256791",
+            "extra": "mean: 421.59802200001195 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.7020637241099295,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.424372126999998 sec\nrounds: 1"
           }
         ]
       }
