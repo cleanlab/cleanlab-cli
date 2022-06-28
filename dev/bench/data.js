@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1656456391192,
+  "lastUpdate": 1656457805343,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -2850,6 +2850,86 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 2.009800210000037 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "43079376+ryansingman@users.noreply.github.com",
+            "name": "ryansingman",
+            "username": "ryansingman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "826609af7126f853c612d7d89abd89c8ec4d499f",
+          "message": "Feature: async cli upload (#17)\n\n* made post requests async\r\n\r\n* fixed race condition for table creation\r\n\r\n* resolve unexpected mime type error\r\n\r\n* upload row as list\r\n\r\n* mini optimizations to serialization\r\n\r\n* fix rows per payload math\r\n\r\n* added gzip encoding to dataset uploads\r\n\r\n* mp -> threading to alleviate shared mem issues (mutable log dict)\r\n\r\n* pre-commit format fixes\r\n\r\n* naming changes for clarity\r\n\r\n* refactored out walrus operator for <3.8 compat\r\n\r\nCo-authored-by: Ryan Singman <ryan@cleanlab.ai>",
+          "timestamp": "2022-06-28T17:07:02-06:00",
+          "tree_id": "39619995a5779926ff592388cf5729a8659cf38b",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/826609af7126f853c612d7d89abd89c8ec4d499f"
+        },
+        "date": 1656457803787,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 14.322441248734227,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00228290219538332",
+            "extra": "mean: 69.82049935714534 msec\nrounds: 14"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-json]",
+            "value": 19.62331567276331,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00928909675274726",
+            "extra": "mean: 50.959787666667154 msec\nrounds: 18"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 2.729703714546706,
+            "unit": "iter/sec",
+            "range": "stddev: 0.016219551921376512",
+            "extra": "mean: 366.3401249999983 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-json]",
+            "value": 2.773037037308463,
+            "unit": "iter/sec",
+            "range": "stddev: 0.02578261701211838",
+            "extra": "mean: 360.6154503333319 msec\nrounds: 3"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.7859310964839362,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.2723761720000084 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-json]",
+            "value": 0.4676040658038853,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.1385613879999994 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-csv]",
+            "value": 0.7681681285772809,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.301798347000016 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-json]",
+            "value": 0.4542217282421623,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.201567952000005 sec\nrounds: 1"
           }
         ]
       }
