@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657955748154,
+  "lastUpdate": 1658347170691,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -4766,6 +4766,86 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 1.8065816030000406 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@anishathalye.com",
+            "name": "Anish Athalye",
+            "username": "anishathalye"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c1d468eb0650cb029266f73fac6662555def8ff",
+          "message": "Allow overriding API URL with an env var (#25)\n\n* Allow overriding API URL with an env var\r\n\r\nWith this patch, rather than modifying the `api_service.py` file for\r\nlocal development, a developer can run the following in their shell:\r\n\r\n    export CLEANLAB_API_URL=\"http://localhost:8500/api/cli/v0\"\r\n\r\n* add instructions for exporting CLEANLAB_API_URL\r\n\r\nCo-authored-by: calebchiam <calebchiam@gmail.com>",
+          "timestamp": "2022-07-20T22:57:47+03:00",
+          "tree_id": "f19787a2bce4abd390350a0af54a00a74c77fbed",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/7c1d468eb0650cb029266f73fac6662555def8ff"
+        },
+        "date": 1658347169989,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 17.287063598600177,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0016271867310526248",
+            "extra": "mean: 57.84672418750026 msec\nrounds: 16"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-json]",
+            "value": 26.293034722883878,
+            "unit": "iter/sec",
+            "range": "stddev: 0.005901910370843158",
+            "extra": "mean: 38.0328862962958 msec\nrounds: 27"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 3.125870801669001,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0175392535050548",
+            "extra": "mean: 319.9108547500007 msec\nrounds: 4"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-json]",
+            "value": 3.722143821104293,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01553612485168268",
+            "extra": "mean: 268.6623752500026 msec\nrounds: 4"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.9289308995493528,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.076506337000012 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-json]",
+            "value": 0.5610104354914373,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.7824980369999963 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-csv]",
+            "value": 0.9236613537410061,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.082647872999999 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-json]",
+            "value": 0.5438794091777495,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.8386428740000014 sec\nrounds: 1"
           }
         ]
       }
