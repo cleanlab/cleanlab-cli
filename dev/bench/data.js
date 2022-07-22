@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658476268196,
+  "lastUpdate": 1658476295359,
   "repoUrl": "https://github.com/cleanlab/cleanlab-cli",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -5726,6 +5726,86 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 2.1428036000000077 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "committer": {
+            "email": "calebchiam@gmail.com",
+            "name": "calebchiam",
+            "username": "calebchiam"
+          },
+          "distinct": true,
+          "id": "5e58f48e537a8692e6cfa300246f49356e8e393c",
+          "message": "Revert \"release v0.1.8\"\n\nThis reverts commit 171f18777731ecade7e00965e8dace6c561ebbc5.",
+          "timestamp": "2022-07-22T10:49:20+03:00",
+          "tree_id": "10740c8beb86679ec97b87bc6f58c0b66f3467a3",
+          "url": "https://github.com/cleanlab/cleanlab-cli/commit/5e58f48e537a8692e6cfa300246f49356e8e393c"
+        },
+        "date": 1658476294274,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-csv]",
+            "value": 18.793504712101754,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00037161940108689206",
+            "extra": "mean: 53.20987305555983 msec\nrounds: 18"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1M-json]",
+            "value": 28.3229257354036,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004290506018686795",
+            "extra": "mean: 35.307086892862976 msec\nrounds: 28"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-csv]",
+            "value": 3.530980215732835,
+            "unit": "iter/sec",
+            "range": "stddev: 0.011277430594487452",
+            "extra": "mean: 283.2074774999711 msec\nrounds: 4"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[10M-json]",
+            "value": 4.1470931610700985,
+            "unit": "iter/sec",
+            "range": "stddev: 0.016955924975122914",
+            "extra": "mean: 241.13275520002162 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-csv]",
+            "value": 0.9842104417980132,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.0160428679999995 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[100M-json]",
+            "value": 0.6133063857465151,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.6305064210000069 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-csv]",
+            "value": 0.970828395938764,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.0300481570000102 sec\nrounds: 1"
+          },
+          {
+            "name": "tests/bench.py::test_generate_schema[1G-json]",
+            "value": 0.5864118423544705,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.705286161999993 sec\nrounds: 1"
           }
         ]
       }
